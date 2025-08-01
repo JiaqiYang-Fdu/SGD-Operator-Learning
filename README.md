@@ -21,7 +21,7 @@ with domain $D = [0,2\pi]^2$ and viscosity $\nu = 0.025$. The forcing $g$ is sam
 
 ## Dataset
 
-We use the dataset provided by [de2022cost](https://arxiv.org/abs/2202.09488), which contains 40,000 i.i.d. input–output pairs obtained by numerically solving the Navier–Stokes equations on a $64 \times 64$ grid. The dataset is publicly available at:
+We use the dataset provided by [de2022cost](https://arxiv.org/abs/2203.13181), which contains 40,000 i.i.d. input–output pairs obtained by numerically solving the Navier–Stokes equations on a $64 \times 64$ grid. The dataset is publicly available at:
 
 📎 **CaltechDATA**: [https://data.caltech.edu/records/fp3ds-kej20](https://data.caltech.edu/records/fp3ds-kej20)
 
@@ -33,6 +33,9 @@ We use stochastic gradient descent (SGD) in a vector-valued Reproducing Kernel H
 
 ## Code Structure
 
-- `SGD_in_RKHS.py`: Main training script
-- `Plot.py`: Data loading and preprocessing
+- `SGD_in_RKHS.py`: Main script for training in the RKHS setting using SGD.
+- `Plot.py`: Visualization of prediction results and convergence curves.
 
+## Acknowledgments
+
+This work builds on the dataset from [de2022cost](https://arxiv.org/abs/2203.13181). We gratefully acknowledge the authors for making their data publicly available via CaltechDATA.  
