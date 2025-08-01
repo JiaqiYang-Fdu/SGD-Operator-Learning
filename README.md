@@ -7,20 +7,17 @@ This repository contains code for operator learning using operator-valued kernel
 We consider the mapping from the external forcing function \( g \) to the vorticity field \( u(10, \cdot) \), where the governing equation is:
 
 
-\begin{equation*}
+$$
 \begin{aligned}
-\begin{cases}
-\frac{\partial u}{\partial t}+(\nu\cdot\nabla)u-\nu\Delta u=g, \\
-u=-\Delta\phi,\quad \int_D\phi=0,\\
-\nu=\left(\frac{\partial\phi}{\partial x_{2}},-\frac{\partial\phi}{\partial x_{1}}\right),
-\end{cases}
-\quad D = [0,2\pi]^2, \quad \nu = 0.025
+\frac{\partial u}{\partial t}+(\nu\cdot\nabla)u-\nu\Delta u &= g, \\
+u &= -\Delta\phi,\quad \int_D\phi=0,\\
+\nu &= \left(\frac{\partial\phi}{\partial x_{2}},-\frac{\partial\phi}{\partial x_{1}}\right),
 \end{aligned}
-\end{equation*}
+$$
 
 
 
-The forcing $\( g \)$ is sampled from a Gaussian process \( \mathcal{GP}(0,(-\Delta + 3^2 I)^{-4}) \).
+with domain \( D = [0,2\pi]^2 \) and viscosity \( \nu = 0.025 \). The forcing \( g \) is sampled from a Gaussian process \( \mathcal{GP}(0,(-\Delta + 3^2 I)^{-4}) \).
 
 ## Dataset
 
