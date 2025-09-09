@@ -1,6 +1,6 @@
 # SGD-Operator-Learning
 
-This repository contains code for operator learning using operator-valued kernel stochastic gradient descent (SGD). The learning task involves approximating solution operators arising from the two-dimensional incompressible Navier–Stokes equations in the vorticity–stream function formulation.
+This repository contains code for operator learning using operator-valued kernel stochastic approximation. The learning task involves approximating solution operators arising from the two-dimensional incompressible Navier–Stokes equations in the vorticity–stream function formulation.
 
 ## Problem Description
 
@@ -29,7 +29,7 @@ We split the data into training, validation, and test sets with a 70%–15%–15
 
 ## Method
 
-We use stochastic gradient descent (SGD) in a vector-valued Reproducing Kernel Hilbert Space (RKHS) defined by a Matérn kernel multiplied by the identity operator. Both fixed and decaying step sizes are explored.
+We use the stochastic approximation in a vector-valued Reproducing Kernel Hilbert Space (RKHS) defined by a Matérn kernel multiplied by the identity operator. Both fixed and decaying step sizes are explored.
 
 ## Code Structure
 
