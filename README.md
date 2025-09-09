@@ -1,4 +1,4 @@
-# SGD-Operator-Learning
+# Stochastic-Approximation-Operator-Learning
 
 This repository contains code for operator learning using operator-valued kernel stochastic approximation. The learning task involves approximating solution operators arising from the two-dimensional incompressible Navier–Stokes equations in the vorticity–stream function formulation.
 
